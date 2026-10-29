@@ -115,6 +115,7 @@ h1{font-family:var(--fd);font-weight:700;font-size:48px;line-height:1.0;margin:2
 .rel button{font-size:17px;color:var(--red);min-height:44px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
 .cred{margin:28px 0 0;padding-top:12px;border-top:1px solid var(--rule);font-size:15px;color:var(--ink2)}
 .cred .cr{color:var(--ink)}
+.cred .cl,.foot .cl{margin-top:8px}.cred a,.foot a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .pad{height:calc(86px + env(safe-area-inset-bottom))}
 /* ---------- the bar along the foot, in ink */
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--ink);color:var(--onink);
@@ -165,7 +166,7 @@ h1{font-family:var(--fd);font-weight:700;font-size:48px;line-height:1.0;margin:2
    <div id="thelist" hidden><p class="sub2">What the ten cards ask you to do on the next MRI list, one line from each. <span class="scr">Each line opens its card.</span></p><ol class="tlist" id="tlist"></ol><button class="reveal" id="printlist">Print this list</button><div class="pfoot"><div class="pf"><div class="pcr">Dr Ganesh Sivasankara · MD · FRCA · FCARCSI · Consultant Anaesthetist</div><div>The cards, with the pictures and the sources, at <b>gundoc9.github.io/the-magnet/</b></div><div>v10, 28 October 2026 · Created in BioRender. Sivasankara, G. (2026) BioRender.com</div></div><img class="pqr" alt="QR code for gundoc9.github.io/the-magnet/" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACEAQAAAAB5P74KAAAA/0lEQVR42s2WvY2kIRAFi9X6jwy+/MOaDB4R1BkzZ9yZtLRaLIRRaqp/YMm/63zx//rZk7XWZi3Oem9vOVFOupDobTzfsMJueI6szG6ahx4nfr4/WTphZWbecmQlYG85ywX5WzuQ1x0HVSmNUe0tJ5BGaiD3HGJbBYi55hRIbDWZ3KuYJlHoPadKjUU78UNbm6kfa6BgR/E01tQY7KR+ipHKIJ4vjnjYPifrYTDH9l6UQw7QwfxRdne35XXb7x8/tS2EQd7VpCGRAedTfoSEQb6i7LMLNJ34SSCp774fzXmX+1D2fk04OV0pG3om70XZJQ8d+OEtx9KBn/XL/i1/AOKYzX1gS4jiAAAAAElFTkSuQmCC"></div></div>
    <div id="sources" hidden><ul class="srclist" id="srclist"></ul></div>
    <div id="numbers" hidden><p class="sub2">Every number the cards state is held in a register with its source, the place in the source and what was read. Before any build, the derived numbers are recomputed from the sources' figures and the model's numbers from the field model; a build that disagrees with the register fails. The register follows, card by card.</p><div class="reg" id="reglist"></div></div>
-   <div class="foot"><div class="cr" id="lcred"></div><div id="lver"></div><div id="lbr"></div></div>
+   <div class="foot"><div class="cr" id="lcred"></div><div id="lver"></div><div id="lbr"></div><div class="cl">A teaching aid for the anaesthetist. Your unit's own MRI safety checks and the manufacturers' instructions decide what goes into the room.</div><div class="cl">This page keeps nothing about you and sends nothing anywhere.</div><div class="cl">Built with Claude (Anthropic). It wrote the code and the first draft of the text; every figure and source was checked by me.</div><div class="cl">© 2026 Ganesh Sivasankara. Shared under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>: you may share it unchanged, with credit, but not for commercial use.</div><div class="cl">Spotted an error? <a href="https://www.linkedin.com/in/ganeshsivasankara" target="_blank" rel="noopener">Message me on LinkedIn</a>.</div></div>
   </div>
  </div>
 </div>
@@ -187,7 +188,7 @@ h1{font-family:var(--fd);font-weight:700;font-size:48px;line-height:1.0;margin:2
     <div class="sect quiz" id="equiz"><h3>Before you go</h3><p id="eq"></p><button class="reveal" id="ereveal" aria-expanded="false" aria-controls="ea">Show the answer</button><p class="qa" id="ea" hidden></p></div>
     <div class="sect srcs"><h3>Sources</h3><ul id="esrc"></ul></div>
     <div class="sect rel"><h3>Related</h3><div class="rl2" id="erel"></div></div>
-    <div class="cred"><div class="cr" id="ecred"></div><div id="ever"></div><div id="ebr"></div></div>
+    <div class="cred"><div class="cr" id="ecred"></div><div id="ever"></div><div id="ebr"></div><div class="cl">A teaching aid for the anaesthetist. Your unit's own MRI safety checks and the manufacturers' instructions decide what goes into the room.</div><div class="cl">This page keeps nothing about you and sends nothing anywhere.</div><div class="cl">Built with Claude (Anthropic). It wrote the code and the first draft of the text; every figure and source was checked by me.</div><div class="cl">© 2026 Ganesh Sivasankara. Shared under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>: you may share it unchanged, with credit, but not for commercial use.</div><div class="cl">Spotted an error? <a href="https://www.linkedin.com/in/ganeshsivasankara" target="_blank" rel="noopener">Message me on LinkedIn</a>.</div></div>
     <div class="pad"></div>
    </div>
   </div>
